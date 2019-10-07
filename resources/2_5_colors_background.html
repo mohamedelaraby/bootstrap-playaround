@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous"-->
+
+        <link rel="stylesheet"href="/resources/css/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
 
     <title>Bootstrap Sandbox</title>
 </head>
@@ -87,72 +90,89 @@
     <div class="container">
         <!--###################START HERE####################-->
 
-        <!-- TEXT COLORS -->
-        <p>Text Primary Color</p>
-        <p>Text Secondary Color</p>
-        <p>Text Success Color</p>
-        <p>Text Info Color</p>
-        <p>Text Warning Color</p>
-        <p>Text Danger Color</p>
-        <p>Text Light Color</p>
-        <p>Text Dark Color</p>
-        <p>Text White Color</p>
-        <p>Text Muted</p>
-        <p>Text Black 50</p>
-        <p>Text White 50</p>
+        <div class="bg-light text-sm-center lead">
+            <!-- TEXT COLORS -->
+           
+            <div class="clearfix">
+                    <p class=" float-right text-primary ">Text Primary Color</p>
+                    <p class="float-left text-secondary ">Text Secondary Color</p>
+            </div>
 
+            <div class="clearfix bg-dark">
+                    <p class=" float-right text-successs">Text Success Color</p>
+                    <p class="float-left text-info">Text Info Color</p>
+            </div>
+
+            <div class="clearfix bg-warning">
+                    <p class=" float-left text-warning ">Text Warning Color</p>
+                    <p class=" float-right text-danger">Text Danger Color</p>
+            </div>
+           
+            <div class="clearfix bg-primary">
+                    <p class="float-right text-light ">Text Light Color</p>
+                    <p class=" float-left text-dark">Text Dark Color</p>
+            </div>
+
+            <div class="clearfix bg-success">
+                    <p class=" float-right text-white d-inline-block">Text White Color</p>
+                    <p class=" float-left text-muted d-inline-block ">Text Muted</p>
+                    <p class=" float-right text-black-50 d-inline bg-danger">Text Black 50</p>
+                    <p class=" float-left text-white-50 d-inline bg-secondary">Text White 50</p>
+            </div>
+
+        </div>
         <br>
         <br>
 
         <!-- LINK COLORS -->
         <p>
-            <a href="#">Primary link</a>
+            <a href="#" class=" text-danger ">Primary link</a>
         </p>
         <p>
-            <a href="#">Secondary link</a>
+            <a href="#" class=" text-danger ">Secondary link</a>
         </p>
         <p>
-            <a href="#">Success link</a>
+            <a href="#" class=" text-danger ">Success link</a>
         </p>
         <p>
-            <a href="#">Info link</a>
+            <a href="#" class=" text-danger ">Info link</a>
         </p>
         <p>
-            <a href="#">Warning link</a>
+            <a href="#" class=" text-danger ">Warning link</a>
         </p>
         <p>
-            <a href="#">Danger link</a>
+            <a href="#" class=" text-danger ">Danger link</a>
         </p>
         <p>
-            <a href="#">Light link</a>
+            <a href="#" class=" text-danger ">Light link</a>
         </p>
         <p>
-            <a href="#">Dark link</a>
+            <a href="#" class=" text-danger ">Dark link</a>
         </p>
         <p>
-            <a href="#">Muted link</a>
+            <a href="#" class=" text-danger ">Muted link</a>
         </p>
         <p>
-            <a href="#">White link</a>
+            <a href="#" class=" text-danger ">White link</a>
         </p>
 
         <br>
         <br>
 
         <!-- BACKGROUND COLORS -->
-        <div>Background Primary Color</div>
-        <div>Background Secondary Color</div>
-        <div>Background Success Color</div>
-        <div>Background Info Color</div>
-        <div>Background Warning Color</div>
-        <div>Background Danger Color</div>
-        <div>Background Light Color</div>
-        <div>Background Dark Color</div>
-        <div>Background White Color</div>
-        <div>Background Transparent</div>
+        <div class="bg-primary text-white">Background Primary Color</div>
+        <div class=" bg-secondary text-light">Background Secondary Color</div>
+        <div class=" bg-success text-infok">Background Success Color</div>
+        <div class=" bg-info text-white">Background Info Color</div>
+        <div class=" bg-warning text-danger ">Background Warning Color</div>
+        <div class=" bg-danger text-white">Background Danger Color</div>
+        <div class=" bg-light text-dark">Background Light Color</div>
+        <div class=" bg-dark text-light">Background Dark Color</div>
+        <div class="bg-white text-secondary">Background White Color</div>
+        <div class=" bg-transparent ">Background Transparent</div>
 
         <!-- INVISIBLE -->
-        <p>Hello</p>
+        <p class=" invisible">Hello</p>
 
     </div>
     <!-- ./container -->
