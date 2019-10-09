@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous"-->
+    
+    <link rel="stylesheet"href="/resources/css/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
 
     <title>Bootstrap Sandbox</title>
 </head>
@@ -90,59 +93,73 @@
         <!--################START HERE################-->
 
         <!-- BUTTONS -->
-        <button type="button">Primary</button>
-        <button type="button">Secondary</button>
-        <button type="button">Success</button>
-        <button type="button">Info</button>
-        <button type="button">Warning</button>
-        <button type="button">Danger</button>
-        <button type="button">Light</button>
-        <button type="button">Dark</button>
-        <button type="button">Link</button>
+        <button type="button" class="btn btn-primary ml-2">Primary</button>
+        <button type="button" class="btn btn-secondary ml-2">Secondary</button>
+        <button type="button" class="btn btn-success ml-2">Success</button>
+        <button type="button" class="btn btn-info ml-2">Info</button>
+        <button type="button" class="btn btn-warning ml-2">Warning</button>
+        <button type="button" class="btn btn-danger ml-2">Danger</button>
+        <button type="button" class="btn btn-light ml-2">Light</button>
+        <button type="button" class="btn btn-dark my-2 ml-2">Dark</button>
+        <button type="button" class="btn btn-link ml-2">Link</button>
 
         <br>
         <br>
 
         <!-- BUTTON TAGS/TYPES -->
-        <a href="#" role="button">Link</a>
-        <button type="submit">Button</button>
-        <input type="button" value="Input">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <a href="#" role="button" class="btn btn-primary ml-1">Link</a>
+        <button type="submit" class="btn btn-success ml-1">Button</button>
+        <input type="button" value="Input" class="btn btn-light ml-1">
+        <input type="submit" value="Submit" class="btn btn-warning ml-1">
+        <input type="reset" value="Reset" class="btn btn-danger  ml-1">
 
         <br>
         <br>
+        <div class="clearfix">
+            <div class="float-left">
+                <!-- OUTLINE BUTTONS -->
+                <button type="button" class="btn btn-outline-primary   my-1  w-50">Primary Outline</button>
+                <button type="button" class="btn btn-outline-secondary my-1   w-50">Secondary Outline</button>
+                <button type="button" class="btn btn-outline-success my-1  w-50">Success Outline</button>
+                <button type="button" class="btn btn-outline-info my-1  w-50">Info Outline</button>
+                <button type="button" class="btn btn-outline-warning my-1  w-50">Warning Outline</button>
+                <button type="button" class="btn btn-outline-danger  my-1 w-50">Danger Outline</button>
+                <button type="button" class="btn btn-outline-light my-1 text-dark  w-50">Light Outline</button>
+                <button type="button" class="btn btn-outline-dark  my-1 w-50">Dark Outline</button>
+            </div>
 
-        <!-- OUTLINE BUTTONS -->
-        <button type="button">Primary Outline</button>
-        <button type="button">Secondary Outline</button>
-        <button type="button">Success Outline</button>
-        <button type="button">Info Outline</button>
-        <button type="button">Warning Outline</button>
-        <button type="button">Danger Outline</button>
-        <button type="button">Light Outline</button>
-        <button type="button">Dark Outline</button>
+            <div class="float-right">
+                <button type="button" class="btn btn-outline-dark w-50 my-1 ">Lorem, ipsum.</button>
+                <button type="button" class="btn btn-outline-light w-50 my-1 ">Lorem, ipsum.</button>
+                <button type="button" class="btn btn-outline-danger w-50 my-1 ">Lorem, ipsum.</button>
+                <button type="button" class="btn btn-outline-warning w-50 my-1 ">Lorem, ipsum.</button>
+                <button type="button" class="btn btn-outline-info w-50 my-1 ">Lorem, ipsum.</button>
+                <button type="button" class="btn btn-outline-success w-50 my-1 ">Lorem, ipsum.</button>
+            </div>
 
+        </div>
         <br>
         <br>
 
         <!-- BUTTON SIZES -->
-        <button type="button">
+        <button type="button" class="btn btn-primary btn-lg">
             <i class="fa fa-user"></i> Large button</button>
-        <button type="button">Small button</button>
+        <button type="button" class="btn btn-warning btn-sm">
+           <i class="fa fa-user-circle"></i> Small button</button>
         <br>
         <br>
-        <button type="button">Block level button</button>
+        <button type="button" class="btn btn-info btn-block">
+           <i class="fas fa-search-location"></i> Block level button</button>
 
         <br>
         <br>
 
         <!-- STATES -->
-        <button type="button">Regular Button</button>
-        <button type="button">Active Button</button>
-        <button type="button">Disabled Button</button>
+        <button type="button" class="btn btn-danger btn-md">Regular Button</button>
+        <button type="button" class="btn btn-primary active">Active Button</button>
+        <button type="button" class="btn btn-success disabled">Disabled Button</button>
 
-        <button type="button">
+        <button type="button" class="btn btn-dark " data-toggle = "button">
             Toggle State
         </button>
 
@@ -150,29 +167,29 @@
         <br>
 
         <!-- BUTTON GROUPS -->
-        <div>
-            <button type="button">Left</button>
-            <button type="button">Middle</button>
-            <button type="button">Right</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-success">Middle</button>
+            <button type="button" class="btn btn-outline-info">Right</button>
         </div>
 
         <br></br>
 
         <!-- BUTTON TOOLBAR -->
-        <div>
-            <div>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button">4</button>
+        <div class="btn-toolbar">
+            <div class="btn-group mr-2">
+                <button class="btn btn-primary" type="button">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-success">3</button>
+                <button type="button" class="btn btn-info">4</button>
             </div>
-            <div>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">7</button>
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-warning">5</button>
+                <button type="button" class="btn btn-danger">6</button>
+                <button type="button" class="btn btn-light">7</button>
             </div>
-            <div>
-                <button type="button">8</button>
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-dark">8</button>
             </div>
         </div>
 
@@ -180,42 +197,110 @@
         <br>
 
         <!-- VERTICAL GROUP -->
-        <div>
-            <button type="button">Left</button>
-            <button type="button">Middle</button>
-            <button type="button">Right</button>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-outline-primary ">Top</button>
+            <button type="button" class="btn btn-outline-secondary ">Middle</button>
+            <button type="button" class="btn btn-outline-info ">Bottom</button>
         </div>
 
         <br>
         <br>
 
         <!-- BUTTON DROPDOWNS -->
-        <div>
-            <button type="button">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                 My Dropdown
             </button>
-            <div>
-                <a href="#">Link One</a>
-                <a href="#">Link Two</a>
-                <a href="#">Link Three</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link One</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link Two</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link Three</a>
+                <div class="dropdown-divider"></div>
             </div>
         </div>
 
         <br>
         <br>
 
+        <!-- DROPDOWN MENU -->
+
+        <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">DropDown</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Link1</a><div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Link2</a><div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Link3</a><div class="dropdown-divider"></div>
+                </div>
+        </div>
+
+
+        <br>
+        <br>
+
+        <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle w-50" data-toggle="dropdown">menu</button>
+
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">lorem5</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">lorem5</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">lorem5</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">lorem5</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">lorem5</a>
+                <div class="dropdown-divider"></div>
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+
+            <!-- Last dropdown menu  -->
+        <div class="dropdown">
+            <button class="btn btn-warning w-75 dropdown-toggle" data-toggle="dropdown">Toggle</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Lorem.</a>
+                 <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Lorem.</a>
+                 <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Lorem.</a>
+                 <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Lorem.</a>
+                 <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Lorem.</a>
+                 <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Lorem.</a>
+                 <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Lorem.</a>
+                 <div class="dropdown-divider"></div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
         <!-- SPLIT DROPDOWNS -->
-        <div>
-            <button type="button">My Button</button>
-            <button type="button">
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-secondary">My Button</button>
+            <button type="button" class="btn btn-secondary" data-toggle="dropdown">
                 <span>Toggle Dropdown</span>
             </button>
-            <div>
-                <a href="#">Link One</a>
-                <a href="#">Link Two</a>
-                <a href="#">Link Three</a>
-                <div></div>
-                <a href="#">Link Four</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item"href="#">Link One</a>
+                <a class="dropdown-item"href="#">Link Two</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item"href="#">Link Three</a>
+                <a class="dropdown-item"href="#">Link Four</a>
             </div>
         </div>
 
