@@ -1,16 +1,6 @@
 /*
 [  author ] ;- Muhammed alaraby
 [  Date   ] ;- 19/10/19
-[  Info   ] ;- main style sheet file
-*/
-/*
-[  author ] ;- Muhammed alaraby
-[  Date   ] ;- 19/10/19
-[  Info   ] ;- confinguration important variables preprocessor style
-*/
-/*
-[  author ] ;- Muhammed alaraby
-[  Date   ] ;- 19/10/19
 [  Info   ] ;- Helper utilities.scss preprocessor style
 */
 .btn-main, .btn-light, .btn-dark {
@@ -33,14 +23,4 @@ input[class^='btn-']:hover {
   background: #ffbc00;
   margin: 0 auto 1rem auto;
   display: block;
-}
-
-body {
-  background: #333;
-  color: #fff;
-}
-
-.navbar {
-  border-bottom: #008ed6 0.3rem solid;
-  opacity: 0.8;
 }

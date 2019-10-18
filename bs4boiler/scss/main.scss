@@ -4,6 +4,18 @@
 [  Info   ] ;- main style sheet file
 */
 
-h1{
-    font-size: 25px;
+// Import Helper Style files
+@import 'config';
+@import 'utilities';
+
+// body
+body{
+    background: $dark-color;
+    color: set-text-color($dark-color);
+}
+
+// Navbar
+.navbar {
+    border-bottom:$blue-color 0.3rem solid;
+    opacity: 0.8;
 }
