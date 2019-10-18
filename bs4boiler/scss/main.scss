@@ -16,6 +16,54 @@ body{
 
 // Navbar
 .navbar {
-    border-bottom:$blue-color 0.3rem solid;
+    border-bottom:$lightblue-color 0.3rem solid;
     opacity: 0.8;
+}
+
+// Home form
+#home-section{
+  background-image: url(/dist/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 45rem;
+  
+
+  //.dark-overlay
+    .dark-overlay{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         min-height: 70rem;
+         background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    // home-inner
+    .home-inner{
+        padding-top: 13rem;
+
+        // home-inner-text-highlighted
+        &-text-highlight{
+            font-weight: bold;
+        }
+
+        // card-form
+        &-card-form{
+            opacity: 0.8;
+        }
+
+        // Home icons
+        &-icon{
+            color: $lightblue-color;
+            background: $primary-color;
+            padding: 0.5rem;
+            border-radius: 0.4rem;
+        }
+    }
+
+    .fa-check{
+        font-size: 2.5rem;
+    }
+    
 }
